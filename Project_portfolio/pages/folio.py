@@ -268,14 +268,14 @@ def create_zip():
 
 vars=[name,no_of_skills,no_of_projects,projects_names,projects_disc,skills,resume,mail,links,links_dic,abt_me,gender,exp_det]
 if st.button("Download"):
-    with open('Portfolio/D1/data.json', 'w') as file:
+    with open('Project_portfolio/Portfolio/D1/data.json', 'w') as file:
         for i in vars:
             json.dump(i, file)
             file.write('\n')
         file.close()
 
     for i in range(no_of_projects):
-            output_folder = "Portfolio/D1/Projects_img/"
+            output_folder = "Project_portfolio/Portfolio/D1/Projects_img"
 
 
             image_path = output_folder + f"project_image_{i + 1}.jpg"
@@ -284,7 +284,7 @@ if st.button("Download"):
 
     file.close()
 
-    output_folder = 'Portfolio/D1/profile/'
+    output_folder = 'Project_portfolio/Portfolio/D1/profile'
 
     output_folder += "profile_img.jpg"
 
