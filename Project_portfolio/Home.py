@@ -296,7 +296,7 @@ def data_writing():
 submit=st.button("Submit",on_click=data_writing)
 
 st.markdown(
-        f'<div style="font-size: 40px; font-weight: bold; color: #ff5733; padding: 10px; text-align: center;">'
+        f'<div style="font-size: 25px; font-weight: bold; color: #ff5733; padding: 10px; text-align: center;">'
         f'"After Submitting Open Slide-bar and click folio to check your portfolio"</div>',
         unsafe_allow_html=True
     )
