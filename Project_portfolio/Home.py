@@ -291,42 +291,15 @@ with prof:
 vars=[name,no_of_skills,no_of_projects,projects_names,projects_disc,skills,resume,mail,links,links_dic,abt_me,gender,exp_det]
 
 def data_writing():
-    st.markdown(
-        f'<div style="font-size: 40px; font-weight: bold; color: #ff5733; padding: 10px; text-align: center;">'
-        f'"Open Slide-bar and click folio to check your portfolio"</div>',
-        unsafe_allow_html=True
-    )
-    # with open('Portfolio/D1/data.json', 'w') as file:
-    #     for i in vars:
-    #         json.dump(i, file)
-    #         file.write('\n')
-    #     file.close()
-    #
-    # for i in range(no_of_projects):
-    #         output_folder = "Portfolio/D1/Projects_img/"
-    #
-    #
-    #         image_path = output_folder + f"project_image_{i + 1}.jpg"
-    #         with open(image_path, 'wb') as file:
-    #             file.write(project_images[i+1].read())
-    #
-    # file.close()
-    #
-    # output_folder = 'Portfolio/D1/profile/'
-    #
-    # output_folder += "profile_img.jpg"
-    #
-    # with open(output_folder, 'wb') as f:
-    #         f.write(profile_pic.read())
-    # f.close()
-
     st.sidebar.success("")
 
-
-
-
-
 submit=st.button("Submit",on_click=data_writing)
+
+st.markdown(
+        f'<div style="font-size: 40px; font-weight: bold; color: #ff5733; padding: 10px; text-align: center;">'
+        f'"After Submitting Open Slide-bar and click folio to check your portfolio"</div>',
+        unsafe_allow_html=True
+    )
 
 st.write("##")
 st.write("##")
