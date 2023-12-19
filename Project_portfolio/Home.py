@@ -342,7 +342,7 @@ st.write("---")
 me,m_det=st.columns([3,7])
 
 with me:
-    with open('Me/WhatsApp Image 2023-12-19 at 16.56.45.jpeg','rb') as img:
+    with open('Me/WhatsApp Image 2023-12-19 at 16.54.58.jpeg','rb') as img:
         my_img=img.read()
         st.image(imgtocir(Image.open(io.BytesIO(my_img))),width=250)
 
