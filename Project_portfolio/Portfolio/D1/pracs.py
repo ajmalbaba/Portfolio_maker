@@ -174,22 +174,21 @@ else:
             unsafe_allow_html=True
         )
 #---------------------------------------------Interns-------------------------------------------------
-
-st.write("##")
-st.write("##")
-st.write("---")
-st.write("##")
-st.markdown(
-        f'<div style="font-size: 80px; font-weight: bold; color: #1D5C96;text-align: center;">My Experience</div>',
-        unsafe_allow_html=True
-    )
-
-for i in exp_det:
+if exp_det:
+    st.write("##")
+    st.write("##")
+    st.write("---")
+    st.write("##")
     st.markdown(
-        f'<div style="font-size: 25px;  color: #7c7687;text-align: left;">{i}</div>',
-        unsafe_allow_html=True
-    )
-    st.write("")
+        f'<div style="font-size: 80px; font-weight: bold; color: #1D5C96;text-align: center;">My Experience</div>',
+        unsafe_allow_html=True)
+
+    for i in exp_det:
+        st.markdown(
+              f'<div style="font-size: 25px;  color: #7c7687;text-align: left;">{i}</div>',
+              unsafe_allow_html=True)
+        st.write("")
+
 
 #---------------------------------------------Contact-me-------------------------------------------
 
