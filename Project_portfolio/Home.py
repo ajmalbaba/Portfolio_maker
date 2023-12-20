@@ -4,7 +4,7 @@ from PIL import Image,ImageDraw,ImageOps
 import copy
 import json
 import zipfile
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide",page_title="Portfoliobuilder")
 import io
 # st.write("---")
 welcome_note = "Welcome to MyPortfolioBuilder"
