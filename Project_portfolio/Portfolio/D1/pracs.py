@@ -31,18 +31,18 @@ project_images={}
 
 
 # file.close()
-with open('profile/profile_img.jpg','rb') as profile:
+with open('profileprofile_img.jpg','rb') as profile:
     image=profile.read()
 profile.close()
-images=os.listdir('Projects_img')
-for img_name in range(len(images)):
-    image_path='Projects_img/'+images[img_name]
+
+for i in range(no_of_projects):
+    image_path=f'Projects_imgproject_image_{i+1}'
     with open(image_path,'rb') as f:
-        project_images.update({img_name+1:f.read()})
+        project_images.update({i+1:f.read()})
 f.close()
 
 
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide",page_title=f"{name}")
 
 
 def open_website(website_url):
