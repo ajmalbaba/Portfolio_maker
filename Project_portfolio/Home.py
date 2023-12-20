@@ -266,16 +266,16 @@ def imgtocir(original_image):
 with upl_img:
     image = st.file_uploader(label="Upload your Profile Picture (Must be a Square)", type=["jpg", "png", "jpeg"])
     if image:
+        st.session_state['profile_pic'] = image
         profile_pic = copy.copy(image)
-        st.session_state['profile_pic'] = profile_pic
-
+        
 
 
 with prof:
     _,temp=st.columns(2)
     with temp:
         if image:
-            final_pic=imgtocir(Image.open(image))
+            final_pic=imgtocir(Image.open(profile_pic))
             st.session_state['final_pic'] = final_pic
             st.image(final_pic, caption='Your Profile', use_column_width=True, width=40)
 
