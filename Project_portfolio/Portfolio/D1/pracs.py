@@ -31,12 +31,12 @@ project_images={}
 
 
 # file.close()
-with open('profileprofile_img.jpg','rb') as profile:
+with open('D1/profileprofile_img.jpg','rb') as profile:
     image=profile.read()
 profile.close()
 
 for i in range(no_of_projects):
-    image_path=f'Projects_imgproject_image_{i+1}'
+    image_path=f"D1/Projects_imgproject_image_{i+1}.jpg"
     with open(image_path,'rb') as f:
         project_images.update({i+1:f.read()})
 f.close()
