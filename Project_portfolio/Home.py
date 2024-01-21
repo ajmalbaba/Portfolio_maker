@@ -123,7 +123,7 @@ links=[]
 links_dic={}
 with r2c1:
     links+=st.multiselect("Select the sites that need to included",
-                   ["Git-hub","Leetcode","CodeChief","Code-forces","linked-In","Geeks-for-Geeks","Hacker-Rank"],
+                   ["Git-hub","Leetcode","CodeChef","Code-forces","linked-In","Geeks-for-Geeks","Hacker-Rank"],
                    max_selections=5)
 for i in links:
     temp=st.text_input(label=f"{i}",placeholder=f"Link to your {i} profile")
@@ -343,7 +343,7 @@ with m_det:
         st.markdown(label_as_button, unsafe_allow_html=True)
 
     with l2:
-        label_as_button = f'<a href="https://drive.google.com/file/d/1T0OS8web1Alr1arxMT2MOmlIYmUHFWVN/view?usp=sharing" target="_blank" style="font-size: 25px; font-weight: bold;  color: #687F8D; text-decoration: none; cursor: pointer;">Resume</a>'
+        label_as_button = f'<a href="https://drive.google.com/file/d/1f4hFTmV8uI8lR3gSgq6iZU0z5ytlJ7Cr/view?usp=drive_link" target="_blank" style="font-size: 25px; font-weight: bold;  color: #687F8D; text-decoration: none; cursor: pointer;">Resume</a>'
         st.markdown(label_as_button, unsafe_allow_html=True)
 
     with l3:
