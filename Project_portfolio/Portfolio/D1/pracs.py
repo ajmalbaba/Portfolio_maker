@@ -6,7 +6,7 @@ import webbrowser
 import requests
 import streamlit_lottie
 from PIL import Image,ImageDraw,ImageOps
-with open('data.json', 'r') as file:
+with open('D1/data.json', 'r') as file:
     name = json.loads(file.readline())
     no_of_skills = json.loads(file.readline())
     no_of_projects = json.loads(file.readline())
