@@ -252,7 +252,7 @@ with con_det[2]:
 
 def create_zip():
     folder_to_zip = "Project_portfolio/Portfolio/D1"
-    zip_filename = "portfolio.zip"
+    zip_filename = "D1.zip"
 
     with zipfile.ZipFile(zip_filename, "w") as zipf:
         for root, _, files in os.walk(folder_to_zip):
