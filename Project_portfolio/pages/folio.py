@@ -116,7 +116,6 @@ st.markdown(
         f'<div style="font-size: 80px; font-weight: bold; color: #1D5C96;text-align: center;">My Projects</div>',
         unsafe_allow_html=True
     )
-
 if no_of_projects > 3:
     projects1 = st.columns(3)
     for i in range(3):
