@@ -124,7 +124,10 @@ if no_of_projects > 3:
     projects1 = st.columns(3)
     for i in range(3):
         with projects1[i]:
-            img=project_images[i+1]
+            if project_images[i+1]:
+                img=project_images[i+1]
+            else:
+                img=project_img_default
             st.image(img)
             st.markdown(
                 f'<div style="font-size: 30px; font-weight: bold; color: #1D5C96;text-align: center;">{projects_names[(i+1)]}</div>',
@@ -140,7 +143,10 @@ if no_of_projects > 3:
     projects2 = st.columns(3)
     for i in range(no_of_projects - 3):
         with projects2[i]:
-            img=project_images[i+4]
+            if project_images[i+1]:
+                img=project_images[i+1]
+            else:
+                img=project_img_default
             st.image(img)
             st.markdown(
                 f'<div style="font-size: 30px; font-weight: bold; color: #1D5C96;text-align: center;">{projects_names[(i+1)]}</div>',
@@ -154,7 +160,10 @@ else:
     rem_projects = st.columns(no_of_projects)
     for i in range(no_of_projects):
         with rem_projects[i]:
-            img=project_images[i+1]
+            if project_images[i+1]:
+                img=project_images[i+1]
+            else:
+                img=project_img_default
             st.image(img)
             st.markdown(
                 f'<div style="font-size: 30px; font-weight: bold; color: #1D5C96;text-align: center;">{projects_names[(i+1)]}</div>',
