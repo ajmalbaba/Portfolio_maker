@@ -4,6 +4,7 @@ from PIL import Image,ImageDraw,ImageOps
 import copy
 import json
 import zipfile
+from collections import defaultdict
 st.set_page_config(layout="wide",page_title="Portfoliobuilder")
 import io
 # st.write("---")
@@ -146,7 +147,7 @@ st.markdown(
     )
 
 projects_names={}
-project_images={}
+project_images=defaultdict('list')
 projects_disc={}
 no_of_projects=st.slider("select No of projects",min_value=1,max_value=6,value=3)
 for i in range(no_of_projects):
