@@ -116,7 +116,7 @@ st.markdown(
         f'<div style="font-size: 80px; font-weight: bold; color: #1D5C96;text-align: center;">My Projects</div>',
         unsafe_allow_html=True
     )
-with open("Project_portfolio\pages\default_img_proj.jpg","rb") as def_pro:
+with open("Project_portfolio/pages/default_img_proj.jpg","rb") as def_pro:
     project_img_default=def_pro.read()
     
 
