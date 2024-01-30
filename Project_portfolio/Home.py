@@ -147,7 +147,7 @@ st.markdown(
     )
 
 projects_names={}
-project_images=defaultdict('list')
+project_images=defaultdict(list)
 projects_disc={}
 no_of_projects=st.slider("select No of projects",min_value=1,max_value=6,value=3)
 for i in range(no_of_projects):
