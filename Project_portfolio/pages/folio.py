@@ -292,7 +292,7 @@ if st.button("Download"):
 
             image_path = output_folder + f"project_image_{i + 1}.jpg"
             with open(image_path, 'wb') as file:
-                file.write(project_images[i+1].read())
+                file.write(project_images[i+1].read() if project_images[i+1] else project_img_default )
 
     file.close()
 
