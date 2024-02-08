@@ -100,7 +100,7 @@ r1c0,_,r1c1=st.columns([1.7,0.3,1])
 
 with r1c0:
     st.markdown(
-        f'<div style="font-size: 28px;padding-top:70px;color: #687F8D;font-family: Pacifico, cursive;">{abt_me}</div>',
+        f'<div style="font-size: 24px;padding-top:70px;color: #687F8D;font-family: Pacifico, cursive;">{abt_me}</div>',
         unsafe_allow_html=True
     )
 
