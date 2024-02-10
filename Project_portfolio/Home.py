@@ -80,7 +80,7 @@ with lott3:
     anime_link = "https://lottie.host/6d2acb34-458b-4d03-bd20-cf9506a99dc0/2fw3quubJU.json"
     streamlit_lottie.st_lottie(anime_link, height=500, width=395)
 st.write("##")
-sample_button = f'<a href="https://portfoliosagar.streamlit.app/"  target="_blank" style="display: flex; justify-content: center; align-items: center; font-size: 40px; font-weight: bold; color: #ff5733; text-decoration: none; cursor: pointer;">Sample</a>'
+sample_button = f'<a href="https://portfoliosagar.streamlit.app/"  target="_blank" style="display: flex; justify-content: center; padding:10px align-items: center; font-size: 40px; font-weight: bold; color: #3c89d1; text-decoration: none; cursor: pointer;">Sample</a>'
 st.markdown(sample_button, unsafe_allow_html=True)
 
 
