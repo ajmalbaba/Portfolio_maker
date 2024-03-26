@@ -169,19 +169,19 @@ skills1=st.columns(5)
 if no_of_skills>5:
     for i in range(5):
         skills1[i].markdown(
-            f'<div style="font-size: 40px; font-weight: bold; color: #3498db;text-align: left;">{skills[str(i+1)]}</div>',
+            f'<div style="font-size: 30px; font-weight: bold; color: #3498db;text-align: left;">{skills[str(i+1)]}</div>',
             unsafe_allow_html=True
         )
     skills2 = st.columns(5)
     for i in range(no_of_skills-5):
         skills2[i].markdown(
-            f'<div style="font-size: 40px; font-weight: bold; color: #3498db;text-align: left;">{skills[str(i+6)]}</div>',
+            f'<div style="font-size: 30px; font-weight: bold; color: #3498db;text-align: left;">{skills[str(i+6)]}</div>',
             unsafe_allow_html=True
         )
 else:
     for i in range(no_of_skills):
         skills1[i].markdown(
-            f'<div style="font-size: 40px; font-weight: bold; color: #3498db;text-align: left;">{skills[str(i+1)]}</div>',
+            f'<div style="font-size: 30px; font-weight: bold; color: #3498db;text-align: left;">{skills[str(i+1)]}</div>',
             unsafe_allow_html=True
         )
 #---------------------------------------------Interns-------------------------------------------------
